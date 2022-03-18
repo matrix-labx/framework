@@ -1,0 +1,14 @@
+{
+  "name": "@matrix/framework",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/index.js",
+  "scripts": {},
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "debug": "^4.3.4",
+    "koa": "^2.13.4"
+  }
+}
