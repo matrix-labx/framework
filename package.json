@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "description": "",
   "main": "src/index.js",
-  "scripts": {},
+  "scripts": {
+    "example": "node example/app.js"
+  },
   "keywords": [],
   "author": "",
   "license": "MIT",

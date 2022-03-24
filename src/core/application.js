@@ -19,6 +19,15 @@ class Application extends EventEmitter {
     return server.listen(...args);
   }
 
+  createContext(req, res) {
+    const context = new Context(req, res);
+    context.req = req;
+    context.res = res;
+
+    context.state = {};
+    return context;
+  }
+
   handleRequest(ctx) {
     console.log(ctx);
 
@@ -32,14 +41,7 @@ class Application extends EventEmitter {
     return;
   }
 
-  createContext(req, res) {
-    const context = new Context(req, res);
-    context.req = req;
-    context.res = res;
-
-    context.state = {};
-    return context;
-  }
+  handleResponse(ctx) {}
 }
 
 module.exports = Application;
