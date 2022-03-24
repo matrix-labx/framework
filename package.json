@@ -8,7 +8,9 @@
   "author": "",
   "license": "MIT",
   "dependencies": {
-    "debug": "^4.3.4",
-    "koa": "^2.13.4"
+    "debug": "^4.3.4"
+  },
+  "devDependencies": {
+    "typescript": "^4.6.2"
   }
 }

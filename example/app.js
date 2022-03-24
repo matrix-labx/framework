@@ -1,7 +1,5 @@
-const { Application } = require('../src/index');
+const { Application } = require('../src');
 
 const app = new Application();
 
 app.listen(3000);
-
-console.log(app);
