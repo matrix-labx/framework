@@ -1,23 +1,35 @@
-const TrieTree = require('./TrieTree');
+const TrieTree = require('./trie');
 
 class Router {
   constructor() {
-    this.map = {};
+    this.trieTree = new TrieTree();
   }
 
-  addRoute() {}
+  add(method, path, middleware, handler) {}
 
-  findRoute() {}
+  find(method, path) {}
 
-  group() {}
+  use() {}
 
-  get() {}
+  get(path, middleware, handler) {
+    return this.add('GET', path, middleware, handler);
+  }
 
-  post() {}
+  post(path, middleware, handler) {
+    return this.add('POST', path, middleware, handler);
+  }
 
-  put() {}
+  put(path, middleware, handler) {
+    return this.add('PUT', path, middleware, handler);
+  }
 
-  del() {}
+  del(path, middleware, handler) {
+    return this.add('DEL', path, middleware, handler);
+  }
+
+  patch(path, middleware, handler) {
+    return this.add('PATCH', path, middleware, handler);
+  }
 }
 
 module.exports = Router;
